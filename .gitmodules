@@ -19,3 +19,6 @@
 [submodule "rosparam_shortcuts"]
 	path = rosparam_shortcuts
 	url = https://github.com/PickNikRobotics/rosparam_shortcuts
+[submodule "moveit2"]
+	path = moveit2
+	url = https://github.com/ros-planning/moveit2

@@ -1,0 +1,3 @@
+source;share/Ti5_Arms/environment/ament_prefix_path.sh
+source;share/Ti5_Arms/environment/library_path.sh
+source;share/Ti5_Arms/environment/path.sh

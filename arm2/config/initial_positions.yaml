@@ -1,0 +1,9 @@
+# Default initial positions for ti5_urdf's ros2_control fake system
+
+initial_positions:
+  A: 0
+  B: 0
+  C: 0
+  D: 0
+  E: 0
+  F: 0

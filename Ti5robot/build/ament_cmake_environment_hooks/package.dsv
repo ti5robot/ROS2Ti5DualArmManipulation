@@ -1,0 +1,4 @@
+source;share/Ti5robot/local_setup.bash
+source;share/Ti5robot/local_setup.dsv
+source;share/Ti5robot/local_setup.sh
+source;share/Ti5robot/local_setup.zsh

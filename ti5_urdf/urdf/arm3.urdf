@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ti5_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-9.79424593313345E-06 -1.585955657668E-07 0.0489234030702085"
+        rpy="0 0 0" />
+      <mass
+        value="0.804132326407685" />
+      <inertia
+        ixx="0.00208344333564978"
+        ixy="1.18558125536883E-09"
+        ixz="5.74696984729546E-07"
+        iyy="0.00215790750330381"
+        iyz="3.91108221651984E-09"
+        izz="0.00189424843776922" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="A_Link">
+    <inertial>
+      <origin
+        xyz="-0.0489008596868101 1.11612938793922E-06 0.0463358566053683"
+        rpy="0 0 0" />
+      <mass
+        value="0.610762503342567" />
+      <inertia
+        ixx="0.00114147247329587"
+        ixy="5.06610157576292E-08"
+        ixz="0.000594506347228851"
+        iyy="0.00188787363342557"
+        iyz="-1.78802582128474E-09"
+        izz="0.00179154452662575" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/A_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/A_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="A"
+    type="revolute">
+    <origin
+      xyz="0 0 0.126"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="A_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.16"
+      upper="3.16"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="B_Link">
+    <inertial>
+      <origin
+        xyz="-0.0148174543621407 -7.32844793930168E-07 0.163674093761747"
+        rpy="0 0 0" />
+      <mass
+        value="1.01613483164023" />
+      <inertia
+        ixx="0.0150679500066006"
+        ixy="-4.4816327486528E-09"
+        ixz="-0.00102504390856525"
+        iyy="0.014770883335043"
+        iyz="-1.82516394777523E-07"
+        izz="0.00115753465608845" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/B_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/B_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="B"
+    type="revolute">
+    <origin
+      xyz="-0.126 0 0.064"
+      rpy="0 0 0" />
+    <parent
+      link="A_Link" />
+    <child
+      link="B_Link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.9"
+      upper="1.9"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="C_Link">
+    <inertial>
+      <origin
+        xyz="0.0525172381530465 -6.40515808356063E-07 0.0357525410320489"
+        rpy="0 0 0" />
+      <mass
+        value="0.207878829794794" />
+      <inertia
+        ixx="0.000453317419670722"
+        ixy="-7.59755901152063E-08"
+        ixz="-0.000198039237717296"
+        iyy="0.000537145689525471"
+        iyz="2.48179360794005E-09"
+        izz="0.000355868230184589" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/C_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/C_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C"
+    type="revolute">
+    <origin
+      xyz="0.051 0 0.3"
+      rpy="0 0 0" />
+    <parent
+      link="B_Link" />
+    <child
+      link="C_Link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-2.86"
+      upper="2.86"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="D_Link">
+    <inertial>
+      <origin
+        xyz="-0.0576191157563622 2.43715994806255E-05 0.0843683613129461"
+        rpy="0 0 0" />
+      <mass
+        value="0.94571879177376" />
+      <inertia
+        ixx="0.00414477030324942"
+        ixy="-2.77134320032314E-07"
+        ixz="0.00138044790034346"
+        iyy="0.0049787768272479"
+        iyz="1.1299462726495E-06"
+        izz="0.0017840358294831" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/D_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/D_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="D"
+    type="revolute">
+    <origin
+      xyz="0.075 0 0.116"
+      rpy="0 0 0" />
+    <parent
+      link="C_Link" />
+    <child
+      link="D_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="E_Link">
+    <inertial>
+      <origin
+        xyz="0.0378598160761921 -0.0307530160085382 -4.21029879971169E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.156943200024781" />
+      <inertia
+        ixx="0.000278323597354339"
+        ixy="8.60055845798391E-05"
+        ixz="1.94162832921587E-08"
+        iyy="0.000202881857355078"
+        iyz="-1.27291248900308E-08"
+        izz="0.000282189661463822" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/E_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/E_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="E"
+    type="revolute">
+    <origin
+      xyz="-0.049 0 0.189"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="D_Link" />
+    <child
+      link="E_Link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="F_Link">
+    <inertial>
+      <origin
+        xyz="-6.68543036141469E-11 0.00611552287926212 -0.00010310644248579"
+        rpy="0 0 0" />
+      <mass
+        value="0.0834496515997102" />
+      <inertia
+        ixx="2.34250403399503E-05"
+        ixy="3.2110899735671E-14"
+        ixz="-1.38252176337189E-13"
+        iyy="4.4477421647326E-05"
+        iyz="4.41463010684962E-08"
+        izz="2.31770375051733E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/F_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ti5_urdf/meshes/arm3/F_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="F"
+    type="revolute">
+    <origin
+      xyz="0.049 -0.108 0"
+      rpy="0 0 0" />
+    <parent
+      link="E_Link" />
+    <child
+      link="F_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+  
+
+  </robot>

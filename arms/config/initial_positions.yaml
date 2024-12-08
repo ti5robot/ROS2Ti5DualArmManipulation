@@ -1,0 +1,17 @@
+# Default initial positions for arms_urdf's ros2_control fake system
+
+initial_positions:
+  L_ELBOW_R: 0
+  L_SHOULDER_P: 0
+  L_SHOULDER_R: 0
+  L_SHOULDER_Y: 0
+  L_WRIST_P: 0
+  L_WRIST_R: 0
+  L_WRIST_Y: 0
+  R_ELBOW_R: 0
+  R_SHOULDER_P: 0
+  R_SHOULDER_R: 0
+  R_SHOULDER_Y: 0
+  R_WRIST_P: 0
+  R_WRIST_R: 0
+  R_WRIST_Y: 0

@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/home/astra/ws_moveits/src/Ti5_Arms",
+    "files.associations": {
+        "ostream": "cpp"
+    }
+}

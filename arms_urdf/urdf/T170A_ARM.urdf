@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="arms_urdf">
+  <link
+    name="PELVIS_S">
+    <inertial>
+      <origin
+        xyz="3.78529087037144E-05 3.81781425684836E-07 0.0386396273530852"
+        rpy="0 0 0" />
+      <mass
+        value="2.10624590271277" />
+      <inertia
+        ixx="0.00165706865324979"
+        ixy="3.13663044821662E-09"
+        ixz="6.84209533216046E-07"
+        iyy="0.00136736758630241"
+        iyz="-1.01014607878816E-10"
+        izz="0.00168295663089359" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/PELVIS_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/PELVIS_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L_SHOULDER_P_S">
+    <inertial>
+      <origin
+        xyz="-0.00982258725282134 0.0704593083751867 1.15261874861217E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.880737519698403" />
+      <inertia
+        ixx="0.000583190308378148"
+        ixy="-1.53153074560473E-05"
+        ixz="6.58466471754072E-09"
+        iyy="0.000445532440067177"
+        iyz="6.37001404038516E-09"
+        izz="0.000465648071069952" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_SHOULDER_P_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_SHOULDER_P_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_SHOULDER_P"
+    type="revolute">
+    <origin
+      xyz="0 0.0945 0.042"
+      rpy="0 0 0" />
+    <parent
+      link="PELVIS_S" />
+    <child
+      link="L_SHOULDER_P_S" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L_SHOULDER_R_S">
+    <inertial>
+      <origin
+        xyz="-0.0346025282975857 0.091739327988169 -1.67085072999562E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.594788424442483" />
+      <inertia
+        ixx="0.000380970396712656"
+        ixy="4.80751844573946E-05"
+        ixz="-1.34913746586865E-11"
+        iyy="0.000320962178597474"
+        iyz="-1.00039763442409E-09"
+        izz="0.000414771047901155" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_SHOULDER_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_SHOULDER_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_SHOULDER_R"
+    type="revolute">
+    <origin
+      xyz="0.035 0.0765 0"
+      rpy="0 0 0" />
+    <parent
+      link="L_SHOULDER_P_S" />
+    <child
+      link="L_SHOULDER_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L_SHOULDER_Y_S">
+    <inertial>
+      <origin
+        xyz="-0.00440976862014801 0.0863620459174068 9.50748668682166E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.563406026626801" />
+      <inertia
+        ixx="0.000327003834287552"
+        ixy="-1.8057438966771E-05"
+        ixz="7.28778136267901E-10"
+        iyy="0.000213830709361531"
+        iyz="1.49273668517817E-10"
+        izz="0.000297341029639189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_SHOULDER_Y_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_SHOULDER_Y_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_SHOULDER_Y"
+    type="revolute">
+    <origin
+      xyz="-0.035 0.1475 0"
+      rpy="0 0 0" />
+    <parent
+      link="L_SHOULDER_R_S" />
+    <child
+      link="L_SHOULDER_Y_S" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L_ELBOW_R_S">
+    <inertial>
+      <origin
+        xyz="-0.0335624237303443 0.0603199964106564 2.99655911639718E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.393571904406493" />
+      <inertia
+        ixx="0.00017277119386253"
+        ixy="2.34549801867355E-05"
+        ixz="-1.90560556659271E-09"
+        iyy="0.000155340245267897"
+        iyz="8.82493073600007E-09"
+        izz="0.00018104232734159" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_ELBOW_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_ELBOW_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_ELBOW_R"
+    type="revolute">
+    <origin
+      xyz="0.034 0.1025 0"
+      rpy="0 0 0" />
+    <parent
+      link="L_SHOULDER_Y_S" />
+    <child
+      link="L_ELBOW_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L_WRIST_P_S">
+    <inertial>
+      <origin
+        xyz="-1.39659173115092E-10 0.0675972604744393 0.019200551565574"
+        rpy="0 0 0" />
+      <mass
+        value="0.442332465815496" />
+      <inertia
+        ixx="0.000476754055455895"
+        ixy="-4.61505824713347E-15"
+        ixz="6.03808112272229E-18"
+        iyy="0.000103466585850499"
+        iyz="-4.88426705501198E-05"
+        izz="0.000482956345754213" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_WRIST_P_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_WRIST_P_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_WRIST_P"
+    type="revolute">
+    <origin
+      xyz="-0.034 0.0965 0"
+      rpy="0 0 0" />
+    <parent
+      link="L_ELBOW_R_S" />
+    <child
+      link="L_WRIST_P_S" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L_WRIST_Y_S">
+    <inertial>
+      <origin
+        xyz="-0.00464135887331864 -5.06426789392833E-10 -0.0341253783666609"
+        rpy="0 0 0" />
+      <mass
+        value="0.23573847772002" />
+      <inertia
+        ixx="5.10686940455785E-05"
+        ixy="7.45706654358429E-16"
+        ixz="6.2619568923368E-06"
+        iyy="6.00636019624519E-05"
+        iyz="1.27989654155383E-16"
+        izz="5.32182903609189E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_WRIST_Y_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_WRIST_Y_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_WRIST_Y"
+    type="revolute">
+    <origin
+      xyz="0 0.1525 0.039"
+      rpy="0 0 0" />
+    <parent
+      link="L_WRIST_P_S" />
+    <child
+      link="L_WRIST_Y_S" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.26"
+      upper="0.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L_WRIST_R_S">
+    <inertial>
+      <origin
+        xyz="-0.0161477357620243 0.0955046558857351 -0.00499392489444117"
+        rpy="0 0 0" />
+      <mass
+        value="0.504894112043562" />
+      <inertia
+        ixx="0.000186833711781125"
+        ixy="-3.99488705622731E-06"
+        ixz="-1.51920720398336E-06"
+        iyy="0.000179960980467837"
+        iyz="3.6992669535716E-06"
+        izz="0.000280756101568308" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_WRIST_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/L_WRIST_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_WRIST_R"
+    type="revolute">
+    <origin
+      xyz="0.0258 0 -0.039"
+      rpy="0 0 0" />
+    <parent
+      link="L_WRIST_Y_S" />
+    <child
+      link="L_WRIST_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.26"
+      upper="0.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_SHOULDER_P_S">
+    <inertial>
+      <origin
+        xyz="-0.00982258725282141 -0.0704593093873431 -1.15069920925137E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.880737519698404" />
+      <inertia
+        ixx="0.000583190308378149"
+        ixy="1.53153074560471E-05"
+        ixz="-6.58466471736542E-09"
+        iyy="0.000445532440067178"
+        iyz="6.37001403998779E-09"
+        izz="0.000465648071069953" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_SHOULDER_P_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_SHOULDER_P_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_SHOULDER_P"
+    type="revolute">
+    <origin
+      xyz="0 -0.0945 0.042"
+      rpy="0 0 0" />
+    <parent
+      link="PELVIS_S" />
+    <child
+      link="R_SHOULDER_P_S" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_SHOULDER_R_S">
+    <inertial>
+      <origin
+        xyz="-0.0346025282975784 -0.09173932900033 1.86280643132974E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.59478842444248" />
+      <inertia
+        ixx="0.000380970396712653"
+        ixy="-4.80751844573946E-05"
+        ixz="1.34913746041655E-11"
+        iyy="0.000320962178597472"
+        iyz="-1.00039763417375E-09"
+        izz="0.000414771047901152" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_SHOULDER_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_SHOULDER_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_SHOULDER_R"
+    type="revolute">
+    <origin
+      xyz="0.035 -0.0765 0"
+      rpy="0 0 0" />
+    <parent
+      link="R_SHOULDER_P_S" />
+    <child
+      link="R_SHOULDER_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_SHOULDER_Y_S">
+    <inertial>
+      <origin
+        xyz="-0.00440976862014946 -0.0863620469295699 -7.58791862676134E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.563406026626801" />
+      <inertia
+        ixx="0.000327003834287551"
+        ixy="1.80574389667711E-05"
+        ixz="-7.28778136077729E-10"
+        iyy="0.000213830709361532"
+        iyz="1.49273668428957E-10"
+        izz="0.000297341029639189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_SHOULDER_Y_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_SHOULDER_Y_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_SHOULDER_Y"
+    type="revolute">
+    <origin
+      xyz="-0.035 -0.1475 0"
+      rpy="0 0 0" />
+    <parent
+      link="R_SHOULDER_R_S" />
+    <child
+      link="R_SHOULDER_Y_S" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_ELBOW_R_S">
+    <inertial>
+      <origin
+        xyz="-0.0335624237303424 -0.0603199974228191 -2.97736340082455E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.393571904406492" />
+      <inertia
+        ixx="0.000172771193862529"
+        ixy="-2.34549801867353E-05"
+        ixz="1.90560556668771E-09"
+        iyy="0.000155340245267897"
+        iyz="8.82493073602971E-09"
+        izz="0.00018104232734159" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_ELBOW_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_ELBOW_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_ELBOW_R"
+    type="revolute">
+    <origin
+      xyz="0.034 -0.1025 0"
+      rpy="0 0 0" />
+    <parent
+      link="R_SHOULDER_Y_S" />
+    <child
+      link="R_ELBOW_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_WRIST_P_S">
+    <inertial>
+      <origin
+        xyz="-1.39656577968772E-10 -0.0675972614865965 0.0192005515655728"
+        rpy="0 0 0" />
+      <mass
+        value="0.442332465815497" />
+      <inertia
+        ixx="0.000476754055455896"
+        ixy="-4.61462558956188E-15"
+        ixz="-5.91762926004267E-18"
+        iyy="0.0001034665858505"
+        iyz="4.88426705501212E-05"
+        izz="0.000482956345754214" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_WRIST_P_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_WRIST_P_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_WRIST_P"
+    type="revolute">
+    <origin
+      xyz="-0.034 -0.0965 0"
+      rpy="0 0 0" />
+    <parent
+      link="R_ELBOW_R_S" />
+    <child
+      link="R_WRIST_P_S" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_WRIST_Y_S">
+    <inertial>
+      <origin
+        xyz="-0.00464135887330083 -5.06426456325926E-10 -0.0341253783666614"
+        rpy="0 0 0" />
+      <mass
+        value="0.235738477720019" />
+      <inertia
+        ixx="5.1068694045578E-05"
+        ixy="7.45771487459288E-16"
+        ixz="6.26195689233664E-06"
+        iyy="6.00636019624515E-05"
+        iyz="1.27828046342987E-16"
+        izz="5.32182903609188E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_WRIST_Y_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_WRIST_Y_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_WRIST_Y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1525 0.039"
+      rpy="0 0 0" />
+    <parent
+      link="R_WRIST_P_S" />
+    <child
+      link="R_WRIST_Y_S" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.26"
+      upper="0.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="R_WRIST_R_S">
+    <inertial>
+      <origin
+        xyz="-0.0201642233698132 -0.11074968386657 -0.00598955339232021"
+        rpy="0 0 0" />
+      <mass
+        value="0.504366058218534" />
+      <inertia
+        ixx="0.000185559065855467"
+        ixy="5.75889766751509E-06"
+        ixz="2.40683898454438E-06"
+        iyy="0.000131246007872084"
+        iyz="1.60533277040148E-06"
+        izz="0.000271800951396149" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_WRIST_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.890196078431372 0.890196078431372 0.913725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/R_WRIST_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_WRIST_R"
+    type="revolute">
+    <origin
+      xyz="0.03 0 -0.039"
+      rpy="0 0 0" />
+    <parent
+      link="R_WRIST_Y_S" />
+    <child
+      link="R_WRIST_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.26"
+      upper="0.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="NECK_Y_S">
+    <inertial>
+      <origin
+        xyz="-1.39656133879562E-10 -0.0133808572523805 0.0389743111428658"
+        rpy="0 0 0" />
+      <mass
+        value="0.33484134740204" />
+      <inertia
+        ixx="0.000143241680081903"
+        ixy="-2.7009653785963E-17"
+        ixz="-4.42987262066023E-15"
+        iyy="0.000135911554571992"
+        iyz="2.24025194595277E-05"
+        izz="9.3245126120205E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/NECK_Y_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/NECK_Y_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="NECK_Y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.076"
+      rpy="0 0 0" />
+    <parent
+      link="PELVIS_S" />
+    <child
+      link="NECK_Y_S" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="NECK_P_S">
+    <inertial>
+      <origin
+        xyz="-0.00464135887329584 0.0341253788203513 9.59426205149327E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.235738477720019" />
+      <inertia
+        ixx="5.10686940455782E-05"
+        ixy="-6.2619568923367E-06"
+        ixz="7.45735823371855E-16"
+        iyy="5.32182903609189E-05"
+        iyz="-1.27929537756251E-16"
+        izz="6.00636019624517E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/NECK_P_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/NECK_P_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="NECK_P"
+    type="revolute">
+    <origin
+      xyz="0 -0.039 0.082"
+      rpy="0 0 0" />
+    <parent
+      link="NECK_Y_S" />
+    <child
+      link="NECK_P_S" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-0.26"
+      upper="0.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="NECK_R_S">
+    <inertial>
+      <origin
+        xyz="0.0084413982842801 7.12093303776681E-06 0.0758572519004315"
+        rpy="0 0 0" />
+      <mass
+        value="0.129428752938967" />
+      <inertia
+        ixx="0.000219779914815882"
+        ixy="-3.32353511854463E-08"
+        ixz="1.92675042718927E-05"
+        iyy="0.000224183907177299"
+        iyz="-1.31581631166055E-10"
+        izz="5.65464655782449E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/NECK_R_S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arms_urdf/meshes/NECK_R_S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="NECK_R"
+    type="revolute">
+    <origin
+      xyz="0.026 0.039 0"
+      rpy="0 0 0" />
+    <parent
+      link="NECK_P_S" />
+    <child
+      link="NECK_R_S" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.26"
+      upper="0.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

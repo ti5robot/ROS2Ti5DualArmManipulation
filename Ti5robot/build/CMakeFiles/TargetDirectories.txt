@@ -1,0 +1,10 @@
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/uninstall.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/Ti5robot_uninstall.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/Ti5robot.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/test.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/edit_cache.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/rebuild_cache.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/list_install_components.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/install.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/install/local.dir
+/home/astra/ws_moveits/src/Ti5robot/build/CMakeFiles/install/strip.dir

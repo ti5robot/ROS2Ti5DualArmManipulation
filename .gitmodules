@@ -1,0 +1,24 @@
+[submodule "moveit_task_constructor"]
+	path = moveit_task_constructor
+	url = https://github.com/ros-planning/moveit_task_constructor.git
+[submodule "srdfdom"]
+	path = srdfdom
+	url = https://github.com/ros-planning/srdfdom.git
+[submodule "moveit2_tutorials"]
+	path = moveit2_tutorials
+	url = https://github.com/ros-planning/moveit2_tutorials
+[submodule "moveit_visual_tools"]
+	path = moveit_visual_tools
+	url = https://github.com/ros-planning/moveit_visual_tools
+[submodule "launch_param_builder"]
+	path = launch_param_builder
+	url = https://github.com/PickNikRobotics/launch_param_builder
+[submodule "moveit_resources"]
+	path = moveit_resources
+	url = https://github.com/ros-planning/moveit_resources
+[submodule "rosparam_shortcuts"]
+	path = rosparam_shortcuts
+	url = https://github.com/PickNikRobotics/rosparam_shortcuts
+[submodule "moveit2"]
+	path = moveit2
+	url = https://github.com/ros-planning/moveit2

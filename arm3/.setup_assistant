@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ti5_urdf
+    relative_path: urdf/arm3.urdf
+  srdf:
+    relative_path: config/ti5_urdf.srdf
+  package_settings:
+    author_name: zx
+    author_email: 2290787180@qq.com
+    generated_timestamp: 1729153161
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
